@@ -1,0 +1,1 @@
+Simple logging for Go
