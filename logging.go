@@ -63,15 +63,15 @@ func Flags() int {
 }
 
 func Panic(v ...interface{}) {
-	log.Panic(v)
+	log.Panic(v...)
 }
 
 func Panicf(format string, v ...interface{}) {
-	log.Panicf(format, v)
+	log.Panicf(format, v...)
 }
 
 func Panicln(v ...interface{}) {
-	log.Panicln(v)
+	log.Panicln(v...)
 }
 
 func Prefix() string {
@@ -82,21 +82,21 @@ func Print(v ...interface{}) {
 	if !Enabled {
 		return
 	}
-	log.Print(v)
+	log.Print(v...)
 }
 
 func Printf(format string, v ...interface{}) {
 	if !Enabled {
 		return
 	}
-	log.Printf(format, v)
+	log.Printf(format, v...)
 }
 
 func Println(v ...interface{}) {
 	if !Enabled {
 		return
 	}
-	log.Println(v)
+	log.Println(v...)
 }
 
 func SetFlags(flag int) {
